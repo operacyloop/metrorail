@@ -1,6 +1,4 @@
-require "metrorail/version"
+require_relative "./metrorail/version"
+require_relative "./metrorail/cli"
+# require_relative "./metrorail/cli"
 
-module Metrorail
-  class Error < StandardError; end
-  # Your code goes here...
-end
