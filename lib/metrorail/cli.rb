@@ -11,9 +11,9 @@ class Metrorail::CLI
     # maybe put a Here Doc here, if you can figure out how to make it work correctly, had problem
     puts #DOC
     puts "Current Metrorail Issues:"
-    puts "1. Elevator Issues"
-    puts "2. Escalator Issues"
     # DOC 
+    @issues = Metrorail::Issue.current
+    
   end 
   
 def menu 
