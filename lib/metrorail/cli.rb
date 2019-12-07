@@ -25,7 +25,7 @@ def menu
     when "1"
       puts "More info on Elevator Issues..."
     when "2"
-       "More info on Escalator Issues..."
+      puts "More info on Escalator Issues..."
       end
     end 
   end
