@@ -4,6 +4,7 @@ class Metrorail::CLI
   def call 
     list_issues
     menu
+    goodbye
   end
   
   def list_issues
@@ -16,13 +17,20 @@ class Metrorail::CLI
   end 
   
 def menu 
-  puts "Enter the number of the Issue you'd like more information on:"
-  input = gets.strip
-  case input 
-  when "1"
-    puts "More info on Elevator Issues..."
-  when "2"
-    puts "More info on Escalator Issues..."
+ input = nil
+  while input != "exit"
+   puts "Enter the number of the Issue you'd like more information on, type exit:"
+    input = gets.strip.downcase
+    case input 
+    when "1"
+      puts "More info on Elevator Issues..."
+    when "2"
+       "More info on Escalator Issues..."
+      end
     end 
   end
+  def goodbye
+    puts "See you next time for the latest information on Metrorail Issues"
+  end  
+
 end 
