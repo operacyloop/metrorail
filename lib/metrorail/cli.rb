@@ -16,7 +16,13 @@ class Metrorail::CLI
   end 
   
 def menu 
-  puts "Enter the number of the Issue You'd like more infor on:"
-end 
-
+  puts "Enter the number of the Issue you'd like more information on:"
+  input = gets.strip
+  case input 
+  when "1"
+    puts "More info on Elevator Issues..."
+  when "2"
+    puts "More info on Escalator Issues..."
+    end 
+  end
 end 
