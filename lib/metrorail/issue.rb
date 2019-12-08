@@ -20,6 +20,7 @@ class Metrorail::Issue
   issue_2.exactlocation = "Southside of the stairway before the street"
   issue_2.fixedestimate = "Noon on December 30, 2019"
   
+ # should return an array [issue_1, issue_2]
   
 #   What is an issue
 # -- Problem (aka SymptomDescription)
