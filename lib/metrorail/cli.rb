@@ -21,13 +21,19 @@ def menu
   while input != "exit"
    puts "Enter the number of the Issue you'd like more information on or type list to see the issues again or exit:"
     input = gets.strip.downcase
-    case input 
-    when "1"
-      puts "More info on Elevator Issues..."
-    when "2"
-      puts "More info on Escalator Issues..."
-    when "list"
+    
+    #logic dealing with how to deal with the user input
+    if input.to_i > 0 
+      puts @issues[input.to_i-1]
+    elsif input == "list"
       list_issues
+    # case input 
+    # when "1"
+    #   puts "More info on Elevator Issues..."
+    # when "2"
+    #   puts "More info on Escalator Issues..."
+    # when "list"
+    #   list_issues
     else 
       puts "Not sure what you want, type list or exit"
       end
