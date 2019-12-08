@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
-require './lib/metrorail'
+# require './lib/metrorail'
 
+require "bundler/setup"
+require "metrorail"
 
  Metrorail::CLI.new.call
 

@@ -2,10 +2,10 @@ class Metrorail::Issue
   attr_accessor :name, :location, :problem, :exactlocation, :fixedestimate
   
   def self.current 
-    # I should return a bunch of instances of Issue 
-    puts "1. Elevator Issues"
-    puts "2. Escalator Issues"
-  end 
+     # I should return a bunch of instances of Issue 
+     #   puts "1. Elevator Issues"
+     #   puts "2. Escalator Issues"
+     # end 
   issue_1 = self.new # same as... Issue.new 
   issue_1.name = "Elevator Issue"
   issue_1.location = "Anacostia"
